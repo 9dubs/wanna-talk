@@ -35,7 +35,7 @@ async def send_messages(websocket):
         raise UserExit
 
 async def chat(user_id):
-    uri = f"ws://127.0.0.1:8000/ws/{user_id}"
+    uri = f"ws://https://wanna-talk-2r3v.onrender.com/ws/{user_id}"
     
     try:
         async with websockets.connect(uri) as websocket:
